@@ -1,0 +1,31 @@
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# API keys / secrets
+*.env
+config/secrets.*
+secrets.*
+apikeys.*
+keys.*
+
+# Build outputs
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+
+# Node modules
+node_modules/
+
+VITE_EMAILJS_SERVICE_ID=service_086dfug
+VITE_EMAILJS_TEMPLATE_ID=template_a84sm2o
+VITE_EMAILJS_PUBLIC_KEY=93AeTcwiZmJFC2dMH
