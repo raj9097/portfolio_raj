@@ -16,7 +16,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <ImageWithFallback
-                src="src\assets\raj.jpg"
+                src="src\assets\raj.png"
                 alt="Workspace"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
