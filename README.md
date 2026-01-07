@@ -188,9 +188,9 @@ npm run build
 **Raj Raushan Kumar**
 - Email: rajraushankumar749@gmail.com
 - Phone: +91 7667364120
-- LinkedIn: [linkedin.com/in/rajraushankumar](https://linkedin.com/in/rajraushankumar)
-- GitHub: [github.com/rajraushankumar](https://github.com/rajraushankumar)
-- LeetCode: [leetcode.com/rajraushankumar](https://leetcode.com/rajraushankumar)
+- LinkedIn: [linkedin.com/in/rajraushankumar](https://www.linkedin.com/in/raj-raushan-kumar-raj)
+- GitHub: [github.com/rajraushankumar](https://github.com/raj9097)
+- LeetCode: [leetcode.com/rajraushankumar](https://leetcode.com/u/RAj7870/)
 
 ## License
 

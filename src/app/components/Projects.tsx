@@ -3,13 +3,16 @@ import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import parmacyImg from "@/assets/paramacy.png";
+import homeImg from "@/assets/smart_home.png";
+import agroImg from "@/assets/agro.png";
 
 const projects = [
   {
     title: "Smart Home Automation System",
     description:
       "IoT-based home automation solution to control lights, fans, and security devices remotely via Android app. Integrated Raspberry Pi with sensors and Firebase Realtime Database.",
-    image: "https://images.unsplash.com/photo-1605108222700-0d605d9ebafe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzY3NTUyMTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: homeImg,
     tags: ["Java", "Python", "IoT", "MySQL", "Firebase"],
     github: "https://github.com/raj9097/Smart-Home-Automation-System",
     demo: "",
@@ -18,7 +21,7 @@ const projects = [
     title: "AgroSence",
     description:
       "Platform integrating IoT sensors and machine learning models for real-time crop monitoring and predictive analytics in agriculture. Enables data-driven decisions for improved crop yields.",
-    image: "https://images.unsplash.com/photo-1611241893603-3c359704e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbnxlbnwxfHx8fDE3Njc1NzQ3NzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: agroImg,
     tags: ["Java", "Python", "Machine Learning", "IoT"],
     github: "https://github.com/raj9097/AgroSence",
     demo: "https://github.com/raj9097/AgroSence/blob/main/README.md",
@@ -27,7 +30,7 @@ const projects = [
     title: "Pharmacy Dispensing Management System",
     description:
       "Django-based pharmacy management system with role-based access. Manages inventory, prescriptions, billing, and patient records. Improved workflow efficiency by ~40%.",
-    image: "https://images.unsplash.com/photo-1648260296289-ab882814a005?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBwcm9qZWN0fGVufDF8fHx8MTc2NzU4NDc0MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: parmacyImg,
     tags: ["Python", "Django", "REST API", "Tailwind CSS", "SQL"],
     github: "https://github.com/raj9097/Pharmacy_Management_System",
     demo: "https://github.com/raj9097/Pharmacy_Management_System/blob/main/README.md",
@@ -38,8 +41,8 @@ const projects = [
       "A responsive personal portfolio website built with React and Tailwind CSS to showcase projects, skills, and experience. Features smooth scrolling and interactive UI components.",
     image : "https://images.unsplash.com/photo-1506765515384-028b60a970df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIgcG9ydGZvbGlvfGVufDF8fHx8MTc2NzU5MjI0Nnwz&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     tags : ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
-    github : "#",
-    demo:"#" ,
+    github : "https://github.com/raj9097/Personal-Portfolio-Website",
+    demo:"https://github.com/raj9097/Personal-Portfolio-Website/blob/main/README.md" ,
   },
 ];
 
