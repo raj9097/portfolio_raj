@@ -5,7 +5,7 @@
 .env.production
 
 # API keys / secrets
-*.env
+.env
 config/secrets.*
 secrets.*
 apikeys.*
@@ -26,6 +26,4 @@ yarn-error.log*
 # Node modules
 node_modules/
 
-VITE_EMAILJS_SERVICE_ID=service_086dfug
-VITE_EMAILJS_TEMPLATE_ID=template_a84sm2o
-VITE_EMAILJS_PUBLIC_KEY=93AeTcwiZmJFC2dMH
+
