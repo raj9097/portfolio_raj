@@ -12,7 +12,9 @@ const experiences = [
       "Developed and optimized backend features using Java, implementing clean, modular code and following OOP principles",
       "Collaborated with the development team to debug issues, write testable code, and support feature enhancements",
       "Gained hands-on experience with real-world SDLC practices and agile development methodologies",
+
     ],
+    
     icon: Briefcase,
   },
 ];
@@ -22,13 +24,13 @@ const certifications = [
     title: "Computer Networks",
     organization: "NPTEL Online Certification",
     icon: Award,
-    link: "#", // Add your certificate link here
+    link: "https://drive.google.com/file/d/1K0OmbEN7AWdel6h4PEJiGey4Q9zaLgsU/view?usp=sharing", // Add your certificate link here
   },
   {
     title: "Internet of Things (IoT)",
     organization: "NPTEL Online Certification",
     icon: Award,
-    link: "#", // Add your certificate link here
+    link: "https://drive.google.com/file/d/1uqW7MOvLznTnsFm9tyzftbzW62lSx0IO/view?usp=sharing", // Add your certificate link here
   },
 ];
 

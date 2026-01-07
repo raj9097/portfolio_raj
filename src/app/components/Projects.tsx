@@ -6,6 +6,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import parmacyImg from "@/assets/paramacy.png";
 import homeImg from "@/assets/smart_home.png";
 import agroImg from "@/assets/agro.png";
+import portImg from "@/assets/portfolio.png";
 
 const projects = [
   {
@@ -39,7 +40,7 @@ const projects = [
     title : "Personal Portfolio Website",
     description :
       "A responsive personal portfolio website built with React and Tailwind CSS to showcase projects, skills, and experience. Features smooth scrolling and interactive UI components.",
-    image : "https://images.unsplash.com/photo-1506765515384-028b60a970df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIgcG9ydGZvbGlvfGVufDF8fHx8MTc2NzU5MjI0Nnwz&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image :portImg,
     tags : ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
     github : "https://github.com/raj9097/Personal-Portfolio-Website",
     demo:"https://github.com/raj9097/Personal-Portfolio-Website/blob/main/README.md" ,

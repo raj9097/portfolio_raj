@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import rajImg from "@/assets/raj.png";
 
 export function About() {
   return (
@@ -16,7 +17,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <ImageWithFallback
-                src="src\assets\raj.png"
+                src={rajImg}
                 alt="Workspace"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
