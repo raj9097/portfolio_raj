@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Button } from "./ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@/assets/Raj.png";
+import profileImage from "@/assets/me.png";
 
 export function Hero() {
   return (

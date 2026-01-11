@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import rajImg from "@/assets/raj.png";
+import rajImg from "@/assets/abImg.png";
 
 export function About() {
   return (
