@@ -7,6 +7,7 @@ import parmacyImg from "@/assets/paramacy.png";
 import homeImg from "@/assets/smart_home.png";
 import agroImg from "@/assets/agro.png";
 import portImg from "@/assets/portfolio.png";
+import taskImg from "@/assets/task.png";
 
 const projects = [
   {
@@ -45,6 +46,15 @@ const projects = [
     github : "https://github.com/raj9097/Personal-Portfolio-Website",
     demo:"https://github.com/raj9097/Personal-Portfolio-Website/blob/main/README.md" ,
   },
+  {
+    title : "Task Manager",
+    
+    description : "A full-stack MERN application for managing tasks with user authentication, role-based access control, and a modern UI.",
+    image : taskImg, 
+    tags : ["JavaScript", "React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind CSS","Authentication","JWT"],
+    github : "https://github.com/raj9097/Task_Manager",
+    demo:"#",
+  }
 ];
 
 export function Projects() {
