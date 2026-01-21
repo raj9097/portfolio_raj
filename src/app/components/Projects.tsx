@@ -55,6 +55,15 @@ const projects = [
     github : "https://github.com/raj9097/Task_Manager",
     demo:"#",
   }
+  ,
+  {
+    title : "Multi-Modal Prompt Refinement System",
+    description : "A system that accepts text, images, documents, or any combination and refines them into a standardized, validated, AI-ready prompt format suitable for downstream AI processing. This project emphasizes design thinking, validation, and reliability when working with Large Language Models (LLMs).",
+    image : taskImg,
+    tags : ["Python", "Streamlit" ,"Pillow", "PyPDF2", "pytesseract", "Pydantic"],
+    github : "https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System",
+    demo:"#",
+  }
 ];
 
 export function Projects() {
