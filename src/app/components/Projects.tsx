@@ -8,6 +8,7 @@ import homeImg from "@/assets/smart_home.png";
 import agroImg from "@/assets/agro.png";
 import portImg from "@/assets/portfolio.png";
 import taskImg from "@/assets/task.png";
+import multiModalImg from "@/assets/multi_model.png";
 
 const projects = [
   {
@@ -59,10 +60,10 @@ const projects = [
   {
     title : "Multi-Modal Prompt Refinement System",
     description : "A system that accepts text, images, documents, or any combination and refines them into a standardized, validated, AI-ready prompt format suitable for downstream AI processing. This project emphasizes design thinking, validation, and reliability when working with Large Language Models (LLMs).",
-    image : taskImg,
+    image : multiModalImg,
     tags : ["Python", "Streamlit" ,"Pillow", "PyPDF2", "pytesseract", "Pydantic"],
     github : "https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System",
-    demo:"#",
+    demo:"https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System/blob/main/README.md",
   }
 ];
 
