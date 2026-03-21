@@ -25,22 +25,24 @@ export function About() {
 
             <div className="space-y-5 sm:space-y-6">
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                I'm a Computer Science student at Parul Institute of Technology,
-                passionate about building innovative solutions that solve real-world
-                problems. With hands-on experience in full-stack development, IoT,
-                and machine learning, I enjoy working on projects that make a difference.
+                I'm Raj Raushan Kumar, a freelance developer and Computer Science
+                undergraduate at Parul Institute of Technology, currently pursuing
+                my B.Tech with a strong interest in building practical digital products.
               </p>
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                During my internship at Bluestock Finotech, I developed and optimized
-                backend features using Java, implementing clean, modular code following
-                OOP principles. I collaborated with development teams to debug issues
-                and enhance features, gaining valuable real-world SDLC experience.
+                My experience spans full-stack web development, Java backend work,
+                IoT systems, and machine learning projects. During my internship at
+                Bluestock Finotech, I developed and optimized backend features using
+                Java, wrote modular and testable code, and collaborated on debugging
+                and feature improvements in a real SDLC environment.
               </p>
               <p className="text-sm leading-7 text-slate-600 sm:text-base">
-                I'm constantly learning and exploring new technologies, with a strong
-                foundation in Data Structures and Algorithms, DBMS, and System Design.
-                My goal is to create impactful software solutions while continuously
-                growing as a developer.
+                I work with technologies such as Java, Python, JavaScript, React,
+                Node.js, Express, Spring Boot, MongoDB, and MySQL. I also enjoy
+                building solution-focused projects. Recently, I built DeliverX
+                and Trivani, alongside work in smart home automation, agriculture
+                analytics, and pharmacy management systems, while strengthening my
+                foundation in DSA, DBMS, OOP, operating systems, and system design.
               </p>
             </div>
           </div>

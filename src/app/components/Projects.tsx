@@ -77,13 +77,13 @@ const projects = [
     demo: "https://github.com/raj9097/DeliverX/blob/main/README.md",
   },
   {
-    title: "Trivani Jewelers",
+    title: "Trivani Jewelers (Live)",
     description:
       "A modern jewelry e-commerce platform designed for seamless browsing and purchasing of premium jewelry. Built with a responsive UI, secure authentication, and optimized product management, it allows users to explore collections, view detailed product information, and enjoy a smooth shopping experience.",
     image: Trivani,
     tags: ["React", "JavaScript", "Node.js", "Express", "MongoDB", "E-commerce"],
-    github: "https://github.com/raj9097/trevani_jwellers",
-    demo: "https://github.com/raj9097/trevani_jwellers",
+    github: "https://trevani-jwellers.vercel.app/",
+    demo: "https://trevani-jwellers.vercel.app/",
   },
 ];
 
