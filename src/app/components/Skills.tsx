@@ -18,41 +18,38 @@ const skills = [
     items: ["MongoDB", "MySQL", "Git", "Postman", "Maven"],
   },
   {
-    // Mobile application Development 
     icon: Terminal,
     title: "Mobile Application Development",
-    items: ["Android Studio", "Java", "XML","Firebase"],
+    items: ["Android Studio", "Java", "XML", "Firebase"],
   },
   {
-    // Machine Learning 
     icon: Code,
     title: "Machine Learning",
     items: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
   },
-  //IoT
   {
     icon: Terminal,
     title: "Internet of Things (IoT)",
     items: ["Raspberry Pi", "Arduino", "Sensors", "Firebase"],
-  }
+  },
 ];
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="bg-white px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-center mb-4">Skills & Expertise</h2>
-          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+          <h2 className="mb-4 text-center text-2xl sm:text-3xl">Skills & Expertise</h2>
+          <p className="mx-auto mb-10 max-w-2xl text-center text-sm leading-7 text-slate-600 sm:mb-12 sm:text-base">
             Proficient in modern technologies and frameworks for building scalable applications.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {skills.map((skill, index) => {
               const Icon = skill.icon;
               return (
@@ -64,13 +61,13 @@ export function Skills() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                    <Icon className="w-8 h-8 text-blue-600" />
+                  <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-blue-100 sm:h-16 sm:w-16">
+                    <Icon className="h-7 w-7 text-blue-600 sm:h-8 sm:w-8" />
                   </div>
-                  <h3 className="mb-4">{skill.title}</h3>
+                  <h3 className="mb-4 text-lg sm:text-xl">{skill.title}</h3>
                   <ul className="space-y-2">
                     {skill.items.map((item, i) => (
-                      <li key={i} className="text-slate-600">
+                      <li key={i} className="text-sm text-slate-600 sm:text-base">
                         {item}
                       </li>
                     ))}

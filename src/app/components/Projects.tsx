@@ -9,6 +9,8 @@ import agroImg from "@/assets/agro.png";
 import portImg from "@/assets/portfolio.png";
 import taskImg from "@/assets/task.png";
 import multiModalImg from "@/assets/multi_model.png";
+import DeliverX from "@/assets/deliverx.png";
+import Trivani from "@/assets/trivani.png";
 
 const projects = [
   {
@@ -39,51 +41,69 @@ const projects = [
     demo: "https://github.com/raj9097/Pharmacy_Management_System/blob/main/README.md",
   },
   {
-    title : "Personal Portfolio Website",
-    description :
+    title: "Personal Portfolio Website",
+    description:
       "A responsive personal portfolio website built with React and Tailwind CSS to showcase projects, skills, and experience. Features smooth scrolling and interactive UI components.",
-    image :portImg,
-    tags : ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
-    github : "https://github.com/raj9097/Personal-Portfolio-Website",
-    demo:"https://github.com/raj9097/Personal-Portfolio-Website/blob/main/README.md" ,
+    image: portImg,
+    tags: ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
+    github: "https://github.com/raj9097/Personal-Portfolio-Website",
+    demo: "https://github.com/raj9097/Personal-Portfolio-Website/blob/main/README.md",
   },
   {
-    title : "Task Manager",
-    
-    description : "A full-stack MERN application for managing tasks with user authentication, role-based access control, and a modern UI.",
-    image : taskImg, 
-    tags : ["JavaScript", "React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind CSS","Authentication","JWT"],
-    github : "https://github.com/raj9097/Task_Manager",
-    demo:"#",
-  }
-  ,
+    title: "Task Manager",
+    description:
+      "A full-stack MERN application for managing tasks with user authentication, role-based access control, and a modern UI.",
+    image: taskImg,
+    tags: ["JavaScript", "React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind CSS", "Authentication", "JWT"],
+    github: "https://github.com/raj9097/Task_Manager",
+    demo: "#",
+  },
   {
-    title : "Multi-Modal Prompt Refinement System",
-    description : "A system that accepts text, images, documents, or any combination and refines them into a standardized, validated, AI-ready prompt format suitable for downstream AI processing. This project emphasizes design thinking, validation, and reliability when working with Large Language Models (LLMs).",
-    image : multiModalImg,
-    tags : ["Python", "Streamlit" ,"Pillow", "PyPDF2", "pytesseract", "Pydantic"],
-    github : "https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System",
-    demo:"https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System/blob/main/README.md",
-  }
+    title: "Multi-Modal Prompt Refinement System",
+    description:
+      "A system that accepts text, images, documents, or any combination and refines them into a standardized, validated, AI-ready prompt format suitable for downstream AI processing. This project emphasizes design thinking, validation, and reliability when working with Large Language Models (LLMs).",
+    image: multiModalImg,
+    tags: ["Python", "Streamlit", "Pillow", "PyPDF2", "pytesseract", "Pydantic"],
+    github: "https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System",
+    demo: "https://github.com/raj9097/Multi-Modal-Prompt-Refinement-System/blob/main/README.md",
+  },
+  {
+    title: "DeliverX",
+    description:
+      "A real-time delivery tracking system built with Node.js, Express, Socket.IO, and MongoDB that enables live tracking of delivery status and location for customers and drivers.",
+    image: DeliverX,
+    tags: ["React", "JavaScript", "Node.js", "Express", "Socket.IO", "MongoDB"],
+    github: "https://github.com/raj9097/DeliverX",
+    demo: "https://github.com/raj9097/DeliverX/blob/main/README.md",
+  },
+  {
+    title: "Trivani Jewelers",
+    description:
+      "A modern jewelry e-commerce platform designed for seamless browsing and purchasing of premium jewelry. Built with a responsive UI, secure authentication, and optimized product management, it allows users to explore collections, view detailed product information, and enjoy a smooth shopping experience.",
+    image: Trivani,
+    tags: ["React", "JavaScript", "Node.js", "Express", "MongoDB", "E-commerce"],
+    github: "https://github.com/raj9097/trevani_jwellers",
+    demo: "https://github.com/raj9097/trevani_jwellers",
+  },
 ];
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 bg-slate-50">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="bg-slate-50 px-4 py-16 sm:px-6 sm:py-20">
+      <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-center mb-4">Featured Projects</h2>
-          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+          <h2 className="mb-4 text-center text-2xl sm:text-3xl">Featured Projects</h2>
+          <p className="mx-auto mb-10 max-w-2xl text-center text-sm leading-7 text-slate-600 sm:mb-12 sm:text-base">
             Here are some of my recent projects that showcase my skills in web
             development and design.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -92,45 +112,45 @@ export function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="overflow-hidden h-full flex flex-col hover:shadow-xl transition-shadow">
+                <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover"
+                    className="h-48 w-full object-cover sm:h-52"
                   />
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="mb-2">{project.title}</h3>
-                    <p className="text-slate-600 mb-4 flex-grow">
+                  <div className="flex flex-grow flex-col p-5 sm:p-6">
+                    <h3 className="mb-2 text-lg sm:text-xl">{project.title}</h3>
+                    <p className="mb-4 flex-grow text-sm leading-7 text-slate-600 sm:text-base">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="mb-4 flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"
+                          className="rounded-full bg-blue-100 px-3 py-1 text-xs text-blue-700 sm:text-sm"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
-                    <div className="flex gap-3">
-                      <Button variant="outline" size="sm" asChild>
+                    <div className="flex flex-col gap-3 sm:flex-row">
+                      <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <Github className="w-4 h-4 mr-2" />
+                          <Github className="mr-2 h-4 w-4" />
                           Code
                         </a>
                       </Button>
-                      <Button size="sm" asChild>
+                      <Button size="sm" asChild className="w-full sm:w-auto">
                         <a
                           href={project.demo}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <ExternalLink className="w-4 h-4 mr-2" />
+                          <ExternalLink className="mr-2 h-4 w-4" />
                           Demo
                         </a>
                       </Button>
