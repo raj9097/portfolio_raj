@@ -11,6 +11,8 @@ import taskImg from "@/assets/task.png";
 import multiModalImg from "@/assets/multi_model.png";
 import DeliverX from "@/assets/deliverx.png";
 import Trivani from "@/assets/trivani.png";
+import typerun from "@/assets/typerun.png";
+
 
 const projects = [
   {
@@ -21,6 +23,15 @@ const projects = [
     tags: ["Java", "Python", "IoT", "MySQL", "Firebase"],
     github: "https://github.com/raj9097/Smart-Home-Automation-System",
     demo: "",
+  },
+  {
+    title :"Type Run ",
+    description: "A web-based typing test application built with React and TypeScript to improve typing speed and accuracy.",
+    image: typerun ,
+    tags: ["JavaScript", "React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/raj9097/Type_Run",
+    demo: "https://typerun.raj01.workers.dev/",
+
   },
   {
     title: "AgroSence",
