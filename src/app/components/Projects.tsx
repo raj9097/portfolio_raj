@@ -57,7 +57,7 @@ const projects = [
     image: portImg,
     tags: ["JavaScript", "React", "Tailwind CSS", "HTML", "CSS"],
     github: "https://github.com/raj9097/Personal-Portfolio-Website",
-    demo: "https://github.com/raj9097/Personal-Portfolio-Website/blob/main/README.md",
+    demo: "https://portfolio-raj-sandy.vercel.app/",
   },
   {
     title: "Task Manager",
