@@ -13,7 +13,6 @@ import DeliverX from "@/assets/deliverx.png";
 import Trivani from "@/assets/trivani.png";
 import typerun from "@/assets/typerun.png";
 
-
 const projects = [
   {
     title: "Smart Home Automation System",
@@ -25,13 +24,13 @@ const projects = [
     demo: "",
   },
   {
-    title :"Type Run ",
-    description: "A web-based typing test application built with React and TypeScript to improve typing speed and accuracy.",
-    image: typerun ,
+    title: "Type Run ",
+    description:
+      "A web-based typing test application built with React and TypeScript to improve typing speed and accuracy.",
+    image: typerun,
     tags: ["JavaScript", "React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/raj9097/Type_Run",
     demo: "https://typerun.raj01.workers.dev/",
-
   },
   {
     title: "AgroSence",
@@ -100,8 +99,10 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="bg-slate-50 px-4 py-16 sm:px-6 sm:py-20">
-      <div className="mx-auto max-w-6xl">
+    <section id="projects" className="relative overflow-hidden bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_20%,_rgba(6,182,212,0.16),_transparent_22%),radial-gradient(circle_at_90%_80%,_rgba(16,185,129,0.12),_transparent_22%),linear-gradient(180deg,_rgba(15,23,42,1),_rgba(2,6,23,1))]" />
+
+      <div className="relative mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +110,7 @@ export function Projects() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="mb-4 text-center text-2xl sm:text-3xl">Featured Projects</h2>
-          <p className="mx-auto mb-10 max-w-2xl text-center text-sm leading-7 text-slate-600 sm:mb-12 sm:text-base">
+          <p className="mx-auto mb-10 max-w-2xl text-center text-sm leading-7 text-slate-300 sm:mb-12 sm:text-base">
             Here are some of my recent projects that showcase my skills in web
             development and design.
           </p>
@@ -123,7 +124,7 @@ export function Projects() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
+                <Card className="flex h-full flex-col overflow-hidden border-white/10 bg-white/6 text-white shadow-[0_20px_70px_rgba(15,23,42,0.35)] backdrop-blur-xl transition-all hover:-translate-y-1 hover:bg-white/8">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
@@ -131,21 +132,21 @@ export function Projects() {
                   />
                   <div className="flex flex-grow flex-col p-5 sm:p-6">
                     <h3 className="mb-2 text-lg sm:text-xl">{project.title}</h3>
-                    <p className="mb-4 flex-grow text-sm leading-7 text-slate-600 sm:text-base">
+                    <p className="mb-4 flex-grow text-sm leading-7 text-slate-300 sm:text-base">
                       {project.description}
                     </p>
                     <div className="mb-4 flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-full bg-blue-100 px-3 py-1 text-xs text-blue-700 sm:text-sm"
+                          className="rounded-full border border-cyan-300/15 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200 sm:text-sm"
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
                     <div className="flex flex-col gap-3 sm:flex-row">
-                      <Button variant="outline" size="sm" asChild className="w-full sm:w-auto">
+                      <Button variant="outline" size="sm" asChild className="w-full border-white/15 bg-white/5 text-white hover:bg-white/10 sm:w-auto">
                         <a
                           href={project.github}
                           target="_blank"
@@ -155,7 +156,7 @@ export function Projects() {
                           Code
                         </a>
                       </Button>
-                      <Button size="sm" asChild className="w-full sm:w-auto">
+                      <Button size="sm" asChild className="w-full bg-white text-slate-950 hover:bg-slate-100 sm:w-auto">
                         <a
                           href={project.demo}
                           target="_blank"
